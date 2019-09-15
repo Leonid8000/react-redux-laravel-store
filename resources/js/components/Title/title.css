@@ -1,0 +1,9 @@
+.title__hr{
+    width:80%;
+}
+
+@media screen and (max-width:1024px) {
+.title{
+    font-size:24px;
+  }
+}

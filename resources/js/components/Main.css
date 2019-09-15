@@ -1,0 +1,38 @@
+:root{
+    --mainWhite:#ecf0f1;
+    --mainDark: #202326;
+    --mainGrey: #f2f2f2;
+    --lightGrey: grey;
+}
+body{
+    font-family: 'Kanit', sans-serif !important;
+    background: var(--mainWhite) !important;
+    color: var(--mainDark) !important;
+    /*overflow: scroll;*/
+}
+
+.text-title{
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+.text-dark{
+    color: var(--mainDark);
+}
+.text-grey{
+    color: var(--mainGrey);
+}
+
+.bg-grey{
+    background: var(--mainGrey);
+}
+.teko{
+    font-family: 'Teko', sans-serif;
+}
+.yantr
+{
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+

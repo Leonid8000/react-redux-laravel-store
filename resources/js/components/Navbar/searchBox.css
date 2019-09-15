@@ -1,0 +1,48 @@
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-search{
+    color:var(--mainWhite);
+    padding-left:10px;
+}
+
+.icon-search:hover{
+    color:var(--mainDark);
+}
+
+.search__wrapper{
+    padding:10px 0;
+}
+.search__box{
+    border-radius:40px;
+}
+.search__btn{
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+}
+
+.search__btn i{
+    padding-left:10px;
+}
+
+.search__txt{
+    border:none;
+    background: var(--mainGrey);
+    outline:none;
+    color: #2d3436;
+    transition: .4s;
+    margin-left:5px;
+    float:left;
+    border-radius:40px;
+    width: 0;
+    height:40px;
+}
+
+.search__box:hover > .search__txt{
+    width:150px;
+    padding: 0 15px;
+}

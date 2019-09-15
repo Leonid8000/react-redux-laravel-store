@@ -1,0 +1,89 @@
+  [
+{
+ "id": 1,
+ "title":"iPhone X",
+  "category":"iPhone",
+ "img":"img/iphone-xs-segment.png",
+ "img2":"img/iphone-xs-select-2019-family.jpeg",
+ "price":999,
+ "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+ "color":""
+
+},
+    {
+      "id": 2,
+      "category":"iPhone",
+      "title":"iPhone X",
+      "img":"img/iphone-xr-segment.png",
+      "img2":"img/iphone-xs-select-2019-family.jpeg",
+      "price":888,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+
+    },
+    {
+      "id": 3,
+      "category":"iPhone",
+      "title":"iPhone 7",
+      "img":"img/iphone-7-segment.png",
+      "img2":"img/iphone-xs-select-2019-family.jpeg",
+      "price":777,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+
+    },
+    {
+      "id": 4,
+      "category":"iPhone",
+      "title":"iPhone 8",
+      "img":"img/iphone-8-segment.png",
+      "img2":"img/iphone-xs-select-2019-family.jpeg",
+      "price":555,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+
+    },
+    {
+      "id": 5,
+      "category":"iPhone",
+      "title":"iPhone X",
+      "img":"img/iphone-xs-segment.png",
+      "img2":"img/iphone-xs-select-2019-family.jpeg",
+      "price":444,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+
+    },
+    {
+      "id": 6,
+      "category":"iPad",
+      "title":"iPad",
+      "img":"img/ipad-pro-12-11-segment.png",
+      "img2":"img/ipad-pro-12-11-select-201810.jpeg",
+      "price":245,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+    },
+    {
+      "id": 7,
+      "category":"iPad",
+      "title":"1929",
+      "img":"img/ipad-pro-12-11-segment.png",
+      "img2":"img/ipad-pro-12-11-select-201810.jpeg",
+      "price":673,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+    },
+    {
+      "id": 8,
+      "category":"iPad",
+      "title":"aaa",
+      "img":"img/ipad-pro-12-11-segment.png",
+      "img2":"img/ipad-pro-12-11-select-201810.jpeg",
+      "price":673,
+      "info":"Additional carrier financing options are available.Additional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are availableAdditional carrier financing options are available ",
+      "color":""
+    }
+
+
+]
