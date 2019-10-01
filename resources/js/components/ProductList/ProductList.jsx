@@ -10,8 +10,7 @@ import  './productList.css';
          <div className="col-6 col-md-6 col-lg-3 d-inline-block">
              <div className="card mb-4">
 
-
-                 <img className="card-img-top" src="../img/iphone-8-segment.png"/>
+                 <img className="card-img-top" src="https://vast-depths-19179.herokuapp.com/public/img/iphone-8-segment.png"/>
 
                  <div className="card-body">
                      <h5 className="card-title text-center">{name}</h5>
@@ -29,5 +28,7 @@ import  './productList.css';
  };
 
 export default ProductList;
+
+<img className="card-img-top" src="../../../../img/iphone-8-segment.png"/>
 
 // <img className="card-img-top" src={image} alt="product"/>
