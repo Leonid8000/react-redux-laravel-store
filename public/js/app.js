@@ -81745,7 +81745,8 @@ var ProductList = function ProductList(product) {
     className: "card mb-4"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "card-img-top",
-    src: "https://vast-depths-19179.herokuapp.com/img/iphone-8-segment.png"
+    src: image,
+    alt: "product"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
@@ -81762,6 +81763,7 @@ var ProductList = function ProductList(product) {
 
 /* harmony default export */ __webpack_exports__["default"] = (ProductList); // <img className="card-img-top" src="../../../../img/iphone-8-segment.png"/>
 // <img className="card-img-top" src={image} alt="product"/>
+// <img className="card-img-top" src="https://vast-depths-19179.herokuapp.com/img/iphone-8-segment.png"/>
 
 /***/ }),
 
