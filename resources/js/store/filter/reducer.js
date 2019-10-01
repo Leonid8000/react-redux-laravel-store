@@ -1,21 +1,23 @@
+import * as types from './types';
+
 const initialState = {
-    items: null,
-    isReady:false
+    filterBy:'all',
+    searchQuery:''
 };
 
 export default (state = initialState, action) => {
     switch  (action.type){
-        case 'SET_PRODUCTS':
+
+        case types.SET_FILTER:
             return {
                 ...state,
-                items: action.payload,
-                isReady:true
+                filterBy: action.payload
             };
 
-        case 'SET_IS_READY':
-            return{
+        case types.SET_SEARCH:
+            return {
                 ...state,
-                isReady: action.payload
+                searchQuery: action.payload
             };
 
         default:

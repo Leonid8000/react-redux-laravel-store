@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as searchActions from '../actions/seacrh';
+import * as searchActions from '../store/search/actions';
 import SearchBox from '../components/Navbar/SearchBox';
 
 const mapStateToProps = ({ products }) => ({

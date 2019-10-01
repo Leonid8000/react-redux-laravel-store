@@ -1,15 +1,18 @@
 import React from 'react';
 import './navbar.css';
 
-const CartComponent = ({title, img, price, id, removeProduct}) => (
-        <li>
+const CartComponent = (product) => {
+
+    const { name, price, image, id, removeProduct } = product;
+
+     return  ( <li>
             <div className="cart__card">
                 <div className="card__header">
                     <hr className="card__hr"/>
-                    <p className="text-center mt-2 teko">{title}</p>
+                    <p className="text-center mt-2 teko">{name}</p>
                 </div>
                 <div className="card__body d-flex justify-content-center">
-                    <img className="cart__img" alt="cartProduct" src={img}/>
+                    <img className="cart__img" alt="cartProduct" src={image}/>
                 </div>
 
                 <div className="d-flex justify-content-center mt-1">
@@ -21,11 +24,11 @@ const CartComponent = ({title, img, price, id, removeProduct}) => (
                 </div>
             </div>
         </li>
+     )
+};
 
-);
-
-const transActionOk = ({ totalPrice}) => {
-   console.log(totalPrice)
+const purchase = () => {
+alert('Purchase is made');
 };
 
 
@@ -42,7 +45,7 @@ const Menu = ({totalPrice, count, items}) => (
                      <div className="transaction__block">
                     <p className="yantr text-center">Total: {totalPrice}$</p>
                          <div className="d-flex justify-content-center mb-2">
-                         <button className="yantr" onClick={transActionOk({totalPrice})}>send</button>
+                         <button className="" onClick={purchase}>send</button>
                           </div>
                     </div>
                     }

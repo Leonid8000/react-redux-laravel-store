@@ -13,26 +13,16 @@ import './Main.css';
 
 class Main extends React.Component {
 
-        UNSAFE_componentWillMount() {
-        const { setProducts } = this.props;
-        axios.get('/products.json').then(({ data }) => {
-            setProducts(data);
-        })
-    };
-
-    // UNSAFE_componentWillMount(){
-    //     axios.get('http://127.0.0.1:8000/home')
-    //         .then(response=>{
-    //             this.setState({products: response.data});
-    //         });
-    // }
-
-    // UNSAFE_componentWillMount() {
+    //     UNSAFE_componentWillMount() {
     //     const { setProducts } = this.props;
-    //     axios.get('http://127.0.0.1:8000/home').then(({data}) => {
+    //     axios.get('/products.json').then(({ data }) => {
     //         setProducts(data);
     //     })
     // };
+
+    componentDidMount() {
+        this.props.getProducts();
+    };
 
     render() {
         const {products, isReady} = this.props;
@@ -51,9 +41,3 @@ class Main extends React.Component {
 }
 
 export default Main;
-
-// {this.state.products.map(products=>{
-//     return(
-//         <p>{products.name}</p>
-//     )
-// })}

@@ -58,7 +58,6 @@
 }
 
 @media screen and (max-width:320px) {
-
     .btns__block{
         width:100%;
     }
@@ -86,3 +85,14 @@
         margin:0;
     }
 }
+
+@media screen and (max-width:240px) {
+    .card-title{
+        display:none;
+    }
+    .btn__buy{
+        display:none;
+    }
+}
+
+

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as productsActions from '../actions/products';
+import * as productsActions from '../store/product/actions';
 import Main from '../components/Main';
 import orderBy from 'lodash/orderBy';
 
@@ -18,12 +18,13 @@ const sortBy = (products, filterBy) => {
     }
 };
 
-const filterProducts = (products, searchQuery) =>
-    products.filter(
-        o=>
-        o.title.toLowerCase().indexOf(searchQuery.toLowerCase()) >=0
+const filterProducts = (products, searchQuery) =>{
+    return products.filter( o =>
+        o.name && o.name.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0
     );
-// o.title.toLowerCase().indexOf(searchQuery.toLowerCase()) >=0
+};
+
+
 
 const searchProducts = (products, filterBy, searchQuery) => {
     return sortBy(filterProducts(products, searchQuery), filterBy);
@@ -56,3 +57,7 @@ export default connect(mapStateToProps, initMapDispatchToProps)(Main);
 // const initMapDispatchToProps = dispatch =>({
 //     setProducts:products => dispatch(setProducts(products))
 // });
+
+//filter
+// && products.items.filter( o =>
+// o.title.toLowerCase().indexOf(searchQuery.toLowerCase()) >=0

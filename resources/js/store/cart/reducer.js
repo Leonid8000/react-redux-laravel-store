@@ -1,10 +1,12 @@
+import * as types from './types';
+
 const initialState = {
     items: []
 };
 
 export default (state = initialState, action) => {
     switch  (action.type){
-        case 'ADD_PRODUCT':
+        case types.ADD_PRODUCT:
             return {
                 ...state,
                 items: [
@@ -12,7 +14,7 @@ export default (state = initialState, action) => {
                     action.payload
                 ]
             };
-        case 'REMOVE_PRODUCT':
+        case types.REMOVE_PRODUCT:
             return{
                 ...state,
                 items: state.items.filter(o => o.id !== action.payload)

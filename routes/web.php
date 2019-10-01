@@ -11,38 +11,31 @@
 |
 */
 
-Route::get('/reactStore', 'ReactController@showReactApp')->name('main');
+// Admin:
+Route::group(['prefix' => 'admin' , 'middleware' => ['web']], function () {
 
-//login
-Route::get('/', function () {
-    return view('auth/login');
+    Auth::routes();
+
+    //Home
+    Route::get('/home', 'ProductController@index')->name('home');
+
+    //Create
+    Route::get('product', function () {
+        return view('product/product');
+    })->name('product');
+
+    //Resource
+    Route::resource('home/product', 'ProductController');
 });
 
-Auth::routes();
-
-//Home
-Route::get('/home', 'ProductController@index')->name('home');
-
-//Create
-Route::get('product', function () {
-    return view('product/product');
-})->name('product');
-
-//Resource
-Route::resource('home/product', 'ProductController');
-
+// Shop (react):
 Route::group(['middleware' => ['web']], function () {
-    Route::any('{all}', function () {
-        return view('index');
+    Route::get('/products', 'ReactController@getReactData');
+
+    Route::get('{all}', function () {
+        return view('main');
     })->where('all', '.*');
 });
-
-
-//Route::get('/test')->name('test');
-//
-//Route::get('/', function () {
-//    return view('test');
-//});
 
 
 

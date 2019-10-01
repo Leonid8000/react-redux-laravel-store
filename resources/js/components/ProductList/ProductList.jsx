@@ -1,17 +1,19 @@
 import React from 'react';
 import  './productList.css';
 
+
  const ProductList = (product) => {
 
-     const { title, price, img, addProduct, addedCount } = product;
+     const { name, price, image, addProduct, addedCount } = product;
 
      return (
          <div className="col-6 col-md-6 col-lg-3 d-inline-block">
              <div className="card mb-4">
 
-                 <img className="card-img-top" src={img} alt="product"/>
+                 <img className="card-img-top" src={image} alt="product"/>
+
                  <div className="card-body">
-                     <h5 className="card-title text-center">{title}</h5>
+                     <h5 className="card-title text-center">{name}</h5>
                  <h5 className="card-title text-center">{price} $</h5>
 
                      <div className="text-center mx-auto btns__block">

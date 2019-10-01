@@ -57,26 +57,27 @@ class ProductController extends Controller
         ]);
 
         if($request->hasFile('image')){
-            $imageName = $request->image->store('public');
-        }
 
-        $product = new Product;
+            $imageName = $request->image->move('img');
+//            $imageName = $request->image->store('public');
+                    $product = new Product;
 
-        $product->name = $request->name;
-        $product->price = $request->price;
-        $product->image = $imageName;
+                    $product->name = $request->name;
+                    $product->price = $request->price;
+                    $product->image = $imageName;
 
-        $product->save();
+                    $product->save();
 
-        return redirect('home');
+                    return redirect('admin/home');
+                }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+                /**
+                 * Display the specified resource.
+                 *
+                 * @param  int  $id
+                 * @return \Illuminate\Http\Response
+                 */
     public function show($id)
     {
         //
@@ -114,8 +115,9 @@ class ProductController extends Controller
 
         ]);
 
-        if($request->hasFile('image')){
-            $imageName = $request->image->store('public');
+        if($request->hasFile('image')) {
+
+            $imageName = $request->image->move('img');
         }
 
         $product = Product::find($id);
@@ -126,7 +128,7 @@ class ProductController extends Controller
 
         $product->save();
 
-        return redirect('home');
+        return redirect('admin/home');
     }
 
     /**
