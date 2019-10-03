@@ -41,3 +41,5 @@ class Main extends React.Component {
 }
 
 export default Main;
+
+// {!isReady ?  <Preloader /> : products.map((product, i) => <ProductList key={i}{...product} />)}

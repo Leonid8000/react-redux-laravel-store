@@ -9376,7 +9376,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".preloader__wrapper{\n    width:100%;\n    height: 100%;\n    position:absolute;\n    top:0;\n    background: var(--mainDark);\n    z-index: 1;\n}\n.preloader{\n    position:fixed;\n    top:50%;\n    left:50%;\n    transform:translate(-50%, -50%);\n}\n\n.loading{\n    margin-top:40%;\n    font-size:24px;\n    text-transform: uppercase;\n    color: var(--mainWhite);\n}\n", ""]);
+exports.push([module.i, "\n.preloader{\n    --bg-color:#424242;\n    --size:200px;\n    --first-color: #ff7473;\n    --second-color: #ffc952;\n    --third-color: #47b8e0;\n    --thickness:3px;\n    --duration:1s;\n    position:fixed;\n    top:0;\n    width: 100%;\n    height: 100%;\n    background-color: var(--bg-color);\n    display:flex;\n    justify-content: center;\n    align-items: center;\n    transition: var(--duration);\n    z-index: 1;\n}\n.preloader__content{\n    position:relative;\n    width: var(--size);\n    height: var(--size);\n}\n\n.preloader__first,\n.preloader__second,\n.preloader__third{\n    position:absolute;\n    width:100%;\n    height:100%;\n    border-radius: 50%;\n    -webkit-animation: var(--duration) linear;\n            animation: var(--duration) linear;\n}\n\n.preloader__first{\n    border-bottom: var(--thickness) solid var(--first-color);\n    -webkit-animation-name:first;\n            animation-name:first;\n}\n.preloader__second{\n    border-right: var(--thickness) solid var(--second-color);\n    -webkit-animation-name:second;\n            animation-name:second;\n}\n.preloader__third{\n    border-top: var(--thickness) solid var(--third-color);\n    -webkit-animation-name:third;\n            animation-name:third;\n}\n\n@-webkit-keyframes first {\n    0%{transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);}\n    100%{transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);}\n}\n\n@keyframes first {\n    0%{transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);}\n    100%{transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);}\n}\n\n@-webkit-keyframes second {\n    0%{transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);}\n    100%{transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);}\n}\n\n@keyframes second {\n    0%{transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);}\n    100%{transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);}\n}\n\n@-webkit-keyframes third {\n    0%{transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);}\n    100%{transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);}\n}\n\n@keyframes third {\n    0%{transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);}\n    100%{transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);}\n}", ""]);
 
 // exports
 
@@ -81382,7 +81382,7 @@ function (_React$Component) {
   return Main;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Main);
+/* harmony default export */ __webpack_exports__["default"] = (Main); // {!isReady ?  <Preloader /> : products.map((product, i) => <ProductList key={i}{...product} />)}
 
 /***/ }),
 
@@ -81670,14 +81670,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var Preloader = function Preloader() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "preloader__wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "preloader"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    align: "center",
-    className: "loading teko"
-  }, "Loading"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
-    className: "loading__hr"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "preloader__content"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "preloader__first"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "preloader__second"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "preloader__third"
   }))));
 };
 

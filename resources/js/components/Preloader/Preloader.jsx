@@ -5,10 +5,11 @@ import './preloader.css';
 
         return (
             <React.Fragment>
-                <div className="preloader__wrapper">
-                    <div className="preloader">
-                        <p align="center" className="loading teko">Loading</p>
-                        <hr className="loading__hr"/>
+                <div className="preloader">
+                    <div className="preloader__content">
+                        <div className="preloader__first"></div>
+                        <div className="preloader__second"></div>
+                        <div className="preloader__third"></div>
                     </div>
                 </div>
             </React.Fragment>
