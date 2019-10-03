@@ -31,7 +31,7 @@ class Main extends React.Component {
     <div>
         <React.Fragment>
             <Navbar />
-            <Title title={'Apple Westfarms'}/>
+            <Title title={'Apple Products'}/>
             <Filter />
             {!isReady ?  <Preloader /> : products.map((product, i) => <ProductList key={i}{...product} />)}
         </React.Fragment>
@@ -41,5 +41,3 @@ class Main extends React.Component {
 }
 
 export default Main;
-
-// {!isReady ?  <Preloader /> : products.map((product, i) => <ProductList key={i}{...product} />)}
