@@ -76,12 +76,7 @@
     padding:3px 6px;
     position:absolute;
     top:13px;
-    /*left:12px;*/
     right:10px;
-    /*margin-left:5px;*/
-    /*left:5px;*/
-    /*bottom:10px;*/
-    /*right:20px;*/
 }
 
 .icon-cart{
@@ -99,21 +94,10 @@
     display:none;
 }
 
-/*.icon-cart:hover .ul{*/
-    /*display:block;*/
-/*}*/
-/*.navbar:hover .*/
-
-/*ul li:hover ul{display:block;}*/
-
-
-/*.cart_icon_wrap:hover .list{display:block;}*/
-
 .cart__img{
     height:30%;
     width:30%;
 }
-
 
 /* Card */
 .card__hr{

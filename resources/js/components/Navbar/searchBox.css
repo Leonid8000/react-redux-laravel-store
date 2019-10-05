@@ -43,6 +43,6 @@
 }
 
 .search__box:hover > .search__txt{
-    width:150px;
-    padding: 0 15px;
+    /*width:150px;*/
+    /*padding: 0 15px;*/
 }

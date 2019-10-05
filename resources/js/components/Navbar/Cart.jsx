@@ -31,31 +31,17 @@ const purchase = () => {
     alert("Purchase is made ");
 };
 
-// const showCart = () => {
-//    let list = document.getElementById('list');
-//     list.addClass('show');
-// };
 
-// function showCart() {
-//     var list = document.getElementById('list');
-//     list.addClass('show');
-// }
-
-const hideCart = () => {
+const toggleCart = () => {
    let cartIcon = document.getElementById('list');
-    // if(cartIcon.style.display = 'none'){
-    //     cartIcon.style.display = 'block'
-    // }
     cartIcon.style.display = (cartIcon.style.display == 'none') ? 'block' : 'none'
-
 };
-
 
 const Menu = ({totalPrice, count, items}) => (
     <div>
         <ul className="list__main mt-3">
             <li>
-               <span className="icon-cart mr-2" onClick={hideCart}>
+               <span className="icon-cart mr-2" onClick={toggleCart}>
                    <span>{count > 0 && <span className="cart__count">{count}</span>}</span>
                </span>
 
