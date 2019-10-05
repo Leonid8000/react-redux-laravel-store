@@ -54,8 +54,13 @@
     font-size:18px;
 }
 
-.icon-apple,.icon-cart{
-    padding:25px;
+.icon-apple{
+    /*padding-top:25px;*/
+    padding-left:25px;
+}
+.icon-cart{
+    padding-top:25px;
+    padding-right:25px;
 }
 
 .icon-apple:hover, .icon-search:hover, .icon-cart:hover{
@@ -72,7 +77,7 @@
     position:absolute;
     top:13px;
     /*left:12px;*/
-    right:0;
+    right:10px;
     /*margin-left:5px;*/
     /*left:5px;*/
     /*bottom:10px;*/

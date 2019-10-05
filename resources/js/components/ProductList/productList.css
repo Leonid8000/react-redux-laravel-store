@@ -58,10 +58,11 @@
 }
 /*-- Characteristics --*/
 .char{
-    display:none;
+    /*display:none;*/
     background:grey;
     position:absolute;
-    transition:1s ease;
+    height:0;
+    width:100%;
 }
 .char__text{
     font-weight: 900;
@@ -69,20 +70,21 @@
     font-family: 'Teko', sans-serif;
     font-size:18px;
     line-height:1;
-}
-.char__img{
-    width:100px;
-    height:100px;
+    opacity:0;
+    transition:0.6s;
 }
 .card:hover .char{
-    display:block;
-    width:100%;
+    /*display:block;*/
+    height:40%;
+    transition: 0.5s;
     opacity:0.9;
 }
 .card:hover .card-img-top{
     opacity:0.8;
 }
-
+.card:hover .char__text{
+    opacity:0.8;
+}
 
 @media screen and (max-width:320px) {
     .btns__block{
@@ -113,6 +115,9 @@
     .btn__buy{
         font-size:14px;
         margin:0;
+    }
+    .card:hover .char{
+        height:65%;
     }
 }
 

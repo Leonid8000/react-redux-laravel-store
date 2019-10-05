@@ -28,9 +28,8 @@ const CartComponent = (product) => {
 };
 
 const purchase = () => {
-alert('Purchase is made');
+    alert("Purchase is made ");
 };
-
 
 const Menu = ({totalPrice, count, items}) => (
     <div>
