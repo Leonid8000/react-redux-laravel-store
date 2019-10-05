@@ -9,3 +9,5 @@ export const removeProduct = id => ({
     type: types.REMOVE_PRODUCT,
     payload: id
 });
+
+

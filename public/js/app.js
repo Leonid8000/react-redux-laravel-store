@@ -9338,7 +9338,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".navbar{\n    background: var(--mainDark);\n    padding:10px 0;\n}\n\n.nav__link:hover{\n    text-decoration:none;\n}\n\n/* icomoon fonts */\n@font-face {\n    font-family: 'icomoon';\n    src:  url(" + escape(__webpack_require__(/*! ./fonts/icomoon.eot?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.eot?5l6n39")) + ");\n    src:  url(" + escape(__webpack_require__(/*! ./fonts/icomoon.eot?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.eot?5l6n39")) + "#iefix) format('embedded-opentype'),\n    url(" + escape(__webpack_require__(/*! ./fonts/icomoon.ttf?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.ttf?5l6n39")) + ") format('truetype'),\n    url(" + escape(__webpack_require__(/*! ./fonts/icomoon.woff?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.woff?5l6n39")) + ") format('woff'),\n    url(" + escape(__webpack_require__(/*! ./fonts/icomoon.svg?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.svg?5l6n39")) + "#icomoon) format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n[class^=\"icon-\"], [class*=\" icon-\"] {\n    /* use !important to prevent issues with browser extensions that change fonts */\n    font-family: 'icomoon' !important;\n    speak: none;\n    font-style: normal;\n    font-weight: normal;\n    font-variant: normal;\n    text-transform: none;\n    line-height: 1;\n\n    /* Better Font Rendering =========== */\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.icon-apple:before {\n    content: \"\\E900\";\n}\n.icon-cart:before {\n    content: \"\\E901\";\n}\n\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-cart__modal:before {\n    content: \"\\E901\";\n}\n\n.icon-apple, .icon-search ,.icon-cart{\n    color:white;\n    font-size:18px;\n}\n\n.icon-apple{\n    /*padding-top:25px;*/\n    padding-left:25px;\n}\n.icon-cart{\n    padding-top:25px;\n    padding-right:25px;\n}\n\n.icon-apple:hover, .icon-search:hover, .icon-cart:hover{\n    color: #b3b3b3;\n    cursor:pointer;\n}\n\n.cart__count{\n    color:white;\n    font-size:12px;\n    background:grey;\n    border-radius:50%;\n    padding:3px 6px;\n    position:absolute;\n    top:13px;\n    /*left:12px;*/\n    right:10px;\n    /*margin-left:5px;*/\n    /*left:5px;*/\n    /*bottom:10px;*/\n    /*right:20px;*/\n}\n\n.icon-cart{\n    position:relative;\n}\n.list__main, .list{\n    list-style:none;\n}\n\n.list{\n    position:absolute;\n    right:1%;\n    background: whitesmoke;\n    display:none;\n    z-index:1;\n}\n\n.show{\n    display:block;\n}\n/*.icon-cart:hover .ul{*/\n    /*display:block;*/\n/*}*/\n\n/*ul li:hover ul{display:block;}*/\n\n.cart_icon_wrap{\n    width:80px;\n    height:80px;\n    /*opacity:0;*/\n    background:red;\n}\n\n.cart_icon_wrap:hover .list{display:block;}\n\n.cart__img{\n    height:30%;\n    width:30%;\n}\n\n\n/* Card */\n.card__hr{\n    width:40%;\n}\n.btn__delete{\n    color:firebrick;\n    height:40px;\n    border-radius: 2px 2px 2px 2px;\n}\n.total__price{\n    color:var(--mainDark);\n}", ""]);
+exports.push([module.i, ".navbar{\n    background: var(--mainDark);\n    padding:10px 0;\n}\n\n.nav__link:hover{\n    text-decoration:none;\n}\n\n/* icomoon fonts */\n@font-face {\n    font-family: 'icomoon';\n    src:  url(" + escape(__webpack_require__(/*! ./fonts/icomoon.eot?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.eot?5l6n39")) + ");\n    src:  url(" + escape(__webpack_require__(/*! ./fonts/icomoon.eot?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.eot?5l6n39")) + "#iefix) format('embedded-opentype'),\n    url(" + escape(__webpack_require__(/*! ./fonts/icomoon.ttf?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.ttf?5l6n39")) + ") format('truetype'),\n    url(" + escape(__webpack_require__(/*! ./fonts/icomoon.woff?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.woff?5l6n39")) + ") format('woff'),\n    url(" + escape(__webpack_require__(/*! ./fonts/icomoon.svg?5l6n39 */ "./resources/js/components/Navbar/fonts/icomoon.svg?5l6n39")) + "#icomoon) format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n[class^=\"icon-\"], [class*=\" icon-\"] {\n    /* use !important to prevent issues with browser extensions that change fonts */\n    font-family: 'icomoon' !important;\n    speak: none;\n    font-style: normal;\n    font-weight: normal;\n    font-variant: normal;\n    text-transform: none;\n    line-height: 1;\n\n    /* Better Font Rendering =========== */\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.icon-apple:before {\n    content: \"\\E900\";\n}\n.icon-cart:before {\n    content: \"\\E901\";\n}\n\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-cart__modal:before {\n    content: \"\\E901\";\n}\n\n.icon-apple, .icon-search ,.icon-cart{\n    color:white;\n    font-size:18px;\n}\n\n.icon-apple{\n    /*padding-top:25px;*/\n    padding-left:25px;\n}\n.icon-cart{\n    padding-top:25px;\n    padding-right:25px;\n}\n\n.icon-apple:hover, .icon-search:hover, .icon-cart:hover{\n    color: #b3b3b3;\n    cursor:pointer;\n}\n\n.cart__count{\n    color:white;\n    font-size:12px;\n    background:grey;\n    border-radius:50%;\n    padding:3px 6px;\n    position:absolute;\n    top:13px;\n    /*left:12px;*/\n    right:10px;\n    /*margin-left:5px;*/\n    /*left:5px;*/\n    /*bottom:10px;*/\n    /*right:20px;*/\n}\n\n.icon-cart{\n    position:relative;\n}\n.list__main, .list{\n    list-style:none;\n}\n\n.list{\n    position:absolute;\n    right:1%;\n    background: whitesmoke;\n    z-index:1;\n    display:none;\n}\n\n/*.icon-cart:hover .ul{*/\n    /*display:block;*/\n/*}*/\n/*.navbar:hover .*/\n\n/*ul li:hover ul{display:block;}*/\n\n\n/*.cart_icon_wrap:hover .list{display:block;}*/\n\n.cart__img{\n    height:30%;\n    width:30%;\n}\n\n\n/* Card */\n.card__hr{\n    width:40%;\n}\n.btn__delete{\n    color:firebrick;\n    height:40px;\n    border-radius: 2px 2px 2px 2px;\n}\n.total__price{\n    color:var(--mainDark);\n}", ""]);
 
 // exports
 
@@ -9357,7 +9357,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-search{\n    color:var(--mainWhite);\n    padding-left:10px;\n}\n\n.icon-search:hover{\n    color:var(--mainDark);\n}\n\n.search__wrapper{\n    padding:10px 0;\n}\n.search__box{\n    border-radius:40px;\n}\n.search__btn{\n    width:40px;\n    height:40px;\n    display: flex;\n    align-items: center;\n}\n\n.search__btn i{\n    padding-left:10px;\n}\n\n.search__txt{\n    border:none;\n    background: var(--mainGrey);\n    outline:none;\n    color: #2d3436;\n    transition: .4s;\n    margin-left:5px;\n    float:left;\n    border-radius:40px;\n    width: 0;\n    height:40px;\n    display:none;\n}\n\n.search__box:hover > .search__txt{\n    width:150px;\n    padding: 0 15px;\n    display:block;\n}\n", ""]);
+exports.push([module.i, "\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-search{\n    color:var(--mainWhite);\n    padding-left:10px;\n}\n\n.icon-search:hover{\n    color:var(--mainDark);\n}\n\n.search__wrapper{\n    padding:10px 0;\n}\n.search__box{\n    border-radius:40px;\n}\n.search__btn{\n    width:40px;\n    height:40px;\n    display: flex;\n    align-items: center;\n}\n\n.search__btn i{\n    padding-left:10px;\n}\n\n.search__txt{\n    border:none;\n    background: var(--mainGrey);\n    outline:none;\n    color: #2d3436;\n    transition: .4s;\n    margin-left:5px;\n    float:left;\n    border-radius:40px;\n    width: 0;\n    height:40px;\n}\n\n.search__box:hover > .search__txt{\n    width:150px;\n    padding: 0 15px;\n}\n", ""]);
 
 // exports
 
@@ -81453,16 +81453,23 @@ var purchase = function purchase() {
 // }
 
 
+var hideCart = function hideCart() {
+  var cartIcon = document.getElementById('list');
+
+  if (cartIcon.style.display = 'none') {
+    cartIcon.style.display = 'block';
+  }
+};
+
 var Menu = function Menu(_ref) {
   var totalPrice = _ref.totalPrice,
       count = _ref.count,
       items = _ref.items;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cart_icon_wrap"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list__main mt-3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "icon-cart mr-2"
+    className: "icon-cart mr-2",
+    onClick: hideCart
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, count > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "cart__count"
   }, count))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {

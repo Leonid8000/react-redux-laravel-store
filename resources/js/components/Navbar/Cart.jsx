@@ -41,12 +41,19 @@ const purchase = () => {
 //     list.addClass('show');
 // }
 
+const hideCart = () => {
+   let cartIcon = document.getElementById('list');
+    if(cartIcon.style.display = 'none'){
+        cartIcon.style.display = 'block'
+    }
+};
+
 
 const Menu = ({totalPrice, count, items}) => (
-    <div className="cart_icon_wrap">
+    <div>
         <ul className="list__main mt-3">
             <li>
-               <span className="icon-cart mr-2">
+               <span className="icon-cart mr-2" onClick={hideCart}>
                    <span>{count > 0 && <span className="cart__count">{count}</span>}</span>
                </span>
 

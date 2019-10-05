@@ -95,27 +95,19 @@
     position:absolute;
     right:1%;
     background: whitesmoke;
-    display:none;
     z-index:1;
+    display:none;
 }
 
-.show{
-    display:block;
-}
 /*.icon-cart:hover .ul{*/
     /*display:block;*/
 /*}*/
+/*.navbar:hover .*/
 
 /*ul li:hover ul{display:block;}*/
 
-.cart_icon_wrap{
-    width:80px;
-    height:80px;
-    /*opacity:0;*/
-    background:red;
-}
 
-.cart_icon_wrap:hover .list{display:block;}
+/*.cart_icon_wrap:hover .list{display:block;}*/
 
 .cart__img{
     height:30%;
