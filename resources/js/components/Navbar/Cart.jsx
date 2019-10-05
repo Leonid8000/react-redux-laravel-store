@@ -36,7 +36,7 @@ const Menu = ({totalPrice, count, items}) => (
     <div>
         <ul className="list__main mt-3">
             <li>
-                <span className="icon-cart " />
+                <span className="icon-cart mr-2" />
             <span>{count > 0 && <span className="cart__count">{count}</span>}
                  </span>
                 <ul className="list">

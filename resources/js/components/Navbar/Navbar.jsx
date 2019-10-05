@@ -10,8 +10,11 @@ import './navbar.css';
 const Navbar = () => (
 
         <nav className="navbar">
+            
             <span className="icon-apple ml-2" />
+            
             <SearchBox />
+            
             <Cart />
         </nav>
     );
