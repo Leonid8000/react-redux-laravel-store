@@ -54,6 +54,10 @@
     font-size:18px;
 }
 
+.icon-apple,.icon-cart{
+    padding:25px;
+}
+
 .icon-apple:hover, .icon-search:hover, .icon-cart:hover{
     color: #b3b3b3;
     cursor:pointer;
@@ -65,10 +69,14 @@
     background:grey;
     border-radius:50%;
     padding:3px 6px;
-    position:relative;
-    bottom:10px;
-    /*margin-right:20px;*/
-    right:10px;
+    position:absolute;
+    top:13px;
+    /*left:12px;*/
+    right:0;
+    /*margin-left:5px;*/
+    /*left:5px;*/
+    /*bottom:10px;*/
+    /*right:20px;*/
 }
 
 .icon-cart{
@@ -98,19 +106,6 @@ ul li:hover ul{display:block;}
 
 
 /* Card */
-.cart__card{
-
-}
-
-.card__header{
-
-}
-.card__body{
-
-}
-.card__footer{
-
-}
 .card__hr{
     width:40%;
 }

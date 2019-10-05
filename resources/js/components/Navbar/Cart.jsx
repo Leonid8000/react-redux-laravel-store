@@ -36,9 +36,10 @@ const Menu = ({totalPrice, count, items}) => (
     <div>
         <ul className="list__main mt-3">
             <li>
-                <span className="icon-cart mr-2" />
-            <span>{count > 0 && <span className="cart__count">{count}</span>}
-                 </span>
+                <span className="icon-cart mr-2">
+                    <span>{count > 0 && <span className="cart__count">{count}</span>}</span>
+                </span>
+
                 <ul className="list">
                 {items.map((product, i) => <CartComponent key={i} {...product}/>)}
                     {count > 0 &&
