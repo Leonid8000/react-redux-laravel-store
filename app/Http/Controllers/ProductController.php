@@ -54,14 +54,6 @@ class ProductController extends Controller
 
             'image'    => 'required',
 
-            'screen' => 'required',
-
-            'camera' => 'required',
-
-            'cpu' => 'required',
-
-            'ram' => 'required',
-
         ]);
 
         if($request->hasFile('image')){

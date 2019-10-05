@@ -56,10 +56,40 @@
     color:white;
     background: var(--mainDark);
 }
+/*-- Characteristics --*/
+.char{
+    display:none;
+    background:grey;
+    position:absolute;
+    transition:1s ease;
+}
+.char__text{
+    font-weight: 900;
+    color:var(--mainDark);
+    font-family: 'Teko', sans-serif;
+    font-size:18px;
+    line-height:1;
+}
+.char__img{
+    width:100px;
+    height:100px;
+}
+.card:hover .char{
+    display:block;
+    width:100%;
+    opacity:0.9;
+}
+.card:hover .card-img-top{
+    opacity:0.8;
+}
+
 
 @media screen and (max-width:320px) {
     .btns__block{
         width:100%;
+    }
+    .char__text{
+        font-size:12px;
     }
 }
 @media screen and (max-width:1024px) {
