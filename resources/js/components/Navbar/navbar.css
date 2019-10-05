@@ -98,11 +98,24 @@
     display:none;
     z-index:1;
 }
-.icon-cart:hover .ul{
+
+.show{
     display:block;
 }
+/*.icon-cart:hover .ul{*/
+    /*display:block;*/
+/*}*/
 
-ul li:hover ul{display:block;}
+/*ul li:hover ul{display:block;}*/
+
+.cart_icon_wrap{
+    width:80px;
+    height:80px;
+    /*opacity:0;*/
+    background:red;
+}
+
+.cart_icon_wrap:hover .list{display:block;}
 
 .cart__img{
     height:30%;

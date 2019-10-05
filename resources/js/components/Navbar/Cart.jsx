@@ -31,15 +31,26 @@ const purchase = () => {
     alert("Purchase is made ");
 };
 
+// const showCart = () => {
+//    let list = document.getElementById('list');
+//     list.addClass('show');
+// };
+
+// function showCart() {
+//     var list = document.getElementById('list');
+//     list.addClass('show');
+// }
+
+
 const Menu = ({totalPrice, count, items}) => (
-    <div>
+    <div className="cart_icon_wrap">
         <ul className="list__main mt-3">
             <li>
-                <span className="icon-cart mr-2">
-                    <span>{count > 0 && <span className="cart__count">{count}</span>}</span>
-                </span>
+               <span className="icon-cart mr-2">
+                   <span>{count > 0 && <span className="cart__count">{count}</span>}</span>
+               </span>
 
-                <ul className="list">
+                <ul className="list" id="list">
                 {items.map((product, i) => <CartComponent key={i} {...product}/>)}
                     {count > 0 &&
                      <div className="transaction__block">
