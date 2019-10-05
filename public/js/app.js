@@ -81454,11 +81454,11 @@ var purchase = function purchase() {
 
 
 var hideCart = function hideCart() {
-  var cartIcon = document.getElementById('list');
+  var cartIcon = document.getElementById('list'); // if(cartIcon.style.display = 'none'){
+  //     cartIcon.style.display = 'block'
+  // }
 
-  if (cartIcon.style.display = 'none') {
-    cartIcon.style.display = 'block';
-  }
+  cartIcon.style.display = cartIcon.style.display == 'none' ? 'block' : 'none';
 };
 
 var Menu = function Menu(_ref) {

@@ -43,9 +43,11 @@ const purchase = () => {
 
 const hideCart = () => {
    let cartIcon = document.getElementById('list');
-    if(cartIcon.style.display = 'none'){
-        cartIcon.style.display = 'block'
-    }
+    // if(cartIcon.style.display = 'none'){
+    //     cartIcon.style.display = 'block'
+    // }
+    cartIcon.style.display = (cartIcon.style.display == 'none') ? 'block' : 'none'
+
 };
 
 
