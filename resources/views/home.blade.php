@@ -27,7 +27,11 @@
                         <tr>
                             <th>S.No.</th>
                             <th>Product Name</th>
-                            <th>Product Price</th>
+                            <th>Screen</th>
+                            <th>RAM</th>
+                            <th>Camera</th>
+                            <th>Cpu</th>
+                            <th>Price</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
@@ -38,6 +42,10 @@
                             <tr>
                                 <td>{{ $loop->index +1 }}</td>
                                 <td>{{ $product->name }}</td>
+                                <td>{{ $product->screen }}</td>
+                                <td>{{ $product->ram }}</td>
+                                <td>{{ $product->camera }}</td>
+                                <td>{{ $product->cpu }}</td>
                                 <td>{{ $product->price }}</td>
                                 <td><a href="{{ route('product.edit', $product->id) }}"><span class="glyphicon glyphicon-edit"></span></a></td>
                                 <td>
@@ -64,7 +72,11 @@
                         <tr>
                             <th>S.No.</th>
                             <th>Product Name</th>
-                            <th>Product Price</th>
+                            <th>Screen</th>
+                            <th>RAM</th>
+                            <th>Camera</th>
+                            <th>Cpu</th>
+                            <th>Price</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>

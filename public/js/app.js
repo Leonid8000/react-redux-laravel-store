@@ -9395,7 +9395,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".card{\n    background: #f2f2f2;\n    border:none;\n}\n.card:hover{\n    background: #d7d8d9;\n    transition:ease 0.4s;\n}\n\n.card-title{\n    font-family: 'Teko', sans-serif;\n    font-size: 24px;\n}\n\n.btns__block{\n    width:60%;\n}\n.btn__buy{\n    font-size:22px;\n    color: var(--mainDark);\n    cursor:pointer;\n    border: 1px solid var(--mainDark);\n    border-radius: 4px;\n    background: none;\n    transition: .6s;\n    overflow: hidden;\n    position: relative;\n    width:100%;\n    font-family: 'Yantramanav', sans-serif;\n}\n\n.btn__buy:focus{\n    outline: none;\n}\n\n.btn__buy::before{\n    content:'';\n    position:absolute;\n    width:0;\n    height:0;\n    left:0;\n    bottom:0;\n    background: #d9dfe5;\n    transform: rotate(35deg);\n    opacity: .5;\n}\n.btn__buy:hover:before{\n    width:420%;\n    height:420%;\n    top:0;\n    left:0;\n    right:0;\n    transition: 0.6s ease;\n}\n.btn__buy:hover{\n    color:white;\n    background: var(--mainDark);\n}\n/*-- Characteristics --*/\n.char{\n    /*display:none;*/\n    background:grey;\n    position:absolute;\n    height:0;\n    width:100%;\n}\n.char__text{\n    font-weight: 900;\n    color:var(--mainDark);\n    font-family: 'Teko', sans-serif;\n    font-size:18px;\n    line-height:1;\n    opacity:0;\n    transition:0.6s;\n}\n.card:hover .char{\n    /*display:block;*/\n    height:40%;\n    transition: 0.5s;\n    opacity:0.9;\n}\n.card:hover .card-img-top{\n    opacity:0.8;\n}\n.card:hover .char__text{\n    opacity:0.8;\n}\n\n@media screen and (max-width:320px) {\n    .btns__block{\n        width:100%;\n    }\n    .char__text{\n        font-size:12px;\n    }\n}\n@media screen and (max-width:1024px) {\n    .title{\n        font-size: 32px;\n    }\n    .main__div{\n        height:auto;\n    }\n    .card__product{\n        width:50%;\n        height:50%;\n    }\n    .card__img{\n        height: 100px;\n        width:auto;\n    }\n    .card-title{\n        font-size:14px;\n    }\n    .btn__buy{\n        font-size:14px;\n        margin:0;\n    }\n    .card:hover .char{\n        height:65%;\n    }\n}\n\n@media screen and (max-width:240px) {\n    .card-title{\n        display:none;\n    }\n    .btn__buy{\n        display:none;\n    }\n}\n\n\n", ""]);
+exports.push([module.i, ".card{\n    background: #f2f2f2;\n    border:none;\n}\n.card:hover{\n    background: #d7d8d9;\n    transition:ease 0.4s;\n}\n\n.card-title{\n    font-family: 'Teko', sans-serif;\n    font-size: 24px;\n}\n\n.btns__block{\n    width:60%;\n}\n.btn__buy{\n    font-size:22px;\n    color: var(--mainDark);\n    cursor:pointer;\n    border: 1px solid var(--mainDark);\n    border-radius: 4px;\n    background: none;\n    transition: .6s;\n    overflow: hidden;\n    position: relative;\n    width:100%;\n    font-family: 'Yantramanav', sans-serif;\n}\n\n.btn__buy:focus{\n    outline: none;\n}\n\n.btn__buy::before{\n    content:'';\n    position:absolute;\n    width:0;\n    height:0;\n    left:0;\n    bottom:0;\n    background: #d9dfe5;\n    transform: rotate(35deg);\n    opacity: .5;\n}\n.btn__buy:hover:before{\n    width:420%;\n    height:420%;\n    top:0;\n    left:0;\n    right:0;\n    transition: 0.6s ease;\n}\n.btn__buy:hover{\n    color:white;\n    background: var(--mainDark);\n}\n/*-- Characteristics --*/\n.char{\n    position:absolute;\n    height:80%;\n    width:100%;\n}\n.char__text{\n    font-weight: 900;\n    color:var(--mainDark);\n    font-family: 'Teko', sans-serif;\n    font-size:18px;\n    line-height:1;\n    opacity:0;\n    transition:0.6s;\n    margin-top:10%;\n}\n.card:hover .char{\n    height:80%;\n    transition: 0.5s;\n    opacity:1;\n}\n.card:hover .card-img-top{\n    opacity:0.7;\n}\n.card:hover .char__text{\n    opacity:1;\n}\n\n@media screen and (max-width:320px) {\n    .btns__block{\n        width:100%;\n    }\n    .char__text{\n        font-size:12px;\n    }\n}\n@media screen and (max-width:1024px) {\n    .title{\n        font-size: 32px;\n    }\n    .main__div{\n        height:auto;\n    }\n    .card__product{\n        width:50%;\n        height:50%;\n    }\n    .card__img{\n        height: 100px;\n        width:auto;\n    }\n    .card-title{\n        font-size:14px;\n    }\n    .btn__buy{\n        font-size:14px;\n        margin:0;\n    }\n    .card:hover .char{\n        height:65%;\n    }\n}\n\n@media screen and (max-width:240px) {\n    .card-title{\n        display:none;\n    }\n    .btn__buy{\n        display:none;\n    }\n}\n\n\n", ""]);
 
 // exports
 
@@ -81533,9 +81533,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var toggleSearchBox = function toggleSearchBox() {
-  var SearchBoxIcon = document.getElementById('sb'); // SearchBoxIcon.style.width = (SearchBoxIcon.style.width == '150px') ? 'width' : '0px'
-
-  SearchBoxIcon.style.width = '100px';
+  var SearchBoxIcon = document.getElementById('sb');
+  SearchBoxIcon.style.width = '120px';
+  SearchBoxIcon.addEventListener('blur', function () {
+    SearchBoxIcon.style.width = '0px';
+  });
 };
 
 var SearchBox = function SearchBox(_ref) {
@@ -81755,6 +81757,10 @@ var ProductList = function ProductList(product) {
       price = product.price,
       image = product.image,
       addProduct = product.addProduct,
+      screen = product.screen,
+      ram = product.ram,
+      cpu = product.cpu,
+      camera = product.camera,
       addedCount = product.addedCount;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6 col-md-6 col-lg-3 d-inline-block"
@@ -81767,14 +81773,14 @@ var ProductList = function ProductList(product) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "char"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "char__text text-center mt-4"
-  }, "Screen: 7,7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "char__text text-center"
-  }, "RAM: 120GB"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Screen: ", screen), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "char__text text-center"
-  }, "Camera: 12,0\u041C\u043F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "RAM: ", ram), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "char__text text-center"
-  }, "CPU: Apple 11")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Camera: ", camera), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "char__text text-center"
+  }, "CPU: ", cpu)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
     className: "card-title text-center"

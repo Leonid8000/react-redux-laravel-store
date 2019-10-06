@@ -36,18 +36,38 @@
                                 <div class="col-lg-6">
 
                                     <div class="form-group">
-                                        <label for="title">Title</label>
+                                        <label for="title">Name</label>
                                         <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" value="{{ $product->name }}">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="subtitle">Post subtitle</label>
+                                        <label for="price">Price</label>
                                         <input type="text" name="price" class="form-control" id="price" placeholder="Enter price" value="{{ $product->price }}">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen">Screen</label>
+                                        <input type="text" name="screen" class="form-control" id="screen" placeholder="Screen" value="{{ $product->screen }}">
                                     </div>
 
                                 </div>
 
                                 <div class="col-lg-6">
+
+                                    <div class="form-group">
+                                        <label for="ram">RAM</label>
+                                        <input type="text" name="ram" class="form-control" id="ram" placeholder="ram" value="{{ $product->ram }}">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="camera">Camera</label>
+                                        <input type="text" name="camera" class="form-control" id="camera" placeholder="Camera" value="{{ $product->camera }}">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen">CPU</label>
+                                        <input type="text" name="cpu" class="form-control" id="cpu" placeholder="cpu" value="{{ $product->cpu }}">
+                                    </div>
 
                                     <div class="form-group">
                                         <label for="image">File input</label>

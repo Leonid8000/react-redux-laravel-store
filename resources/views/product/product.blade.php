@@ -52,9 +52,29 @@
                                             <input type="text" name="price" class="form-control" id="price" placeholder="Price $" required>
                                         </div>
 
+                                        <div class="form-group">
+                                            <label for="screen">Main Screen</label>
+                                            <input type="text" name="screen" class="form-control" id="screen" placeholder="screen" required>
+                                        </div>
+
                                     </div>
 
                                     <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="ram">RAM</label>
+                                            <input type="text" name="ram" class="form-control" id="ram" placeholder="ram" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="camera">Camera</label>
+                                            <input type="text" name="camera" class="form-control" id="camera" placeholder="camera" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="cpu">CPU</label>
+                                            <input type="text" name="cpu" class="form-control" id="cpu" placeholder="cpu" required>
+                                        </div>
 
                                         <div class="form-group">
                                             <label for="image">File input</label>

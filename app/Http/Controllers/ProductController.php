@@ -50,6 +50,14 @@ class ProductController extends Controller
 
             'name'    => 'required',
 
+            'screen'    => 'required',
+
+            'ram'    => 'required',
+
+            'camera'    => 'required',
+
+            'cpu'    => 'required',
+
             'price' => 'required',
 
             'image'    => 'required',
@@ -63,6 +71,10 @@ class ProductController extends Controller
                     $product = new Product;
 
                     $product->name = $request->name;
+                    $product->screen = $request->screen;
+                    $product->ram = $request->ram;
+                    $product->camera = $request->camera;
+                    $product->cpu = $request->cpu;
                     $product->price = $request->price;
                     $product->image = $imageName;
 
@@ -109,6 +121,14 @@ class ProductController extends Controller
 
             'name'    => 'required',
 
+            'screen'    => 'required',
+
+            'ram'    => 'required',
+
+            'camera'    => 'required',
+
+            'cpu'    => 'required',
+
             'price' => 'required',
 
             'image'    => 'required',
@@ -123,6 +143,10 @@ class ProductController extends Controller
         $product = Product::find($id);
 
         $product->name = $request->name;
+        $product->screen = $request->screen;
+        $product->ram = $request->ram;
+        $product->camera = $request->camera;
+        $product->cpu = $request->cpu;
         $product->price = $request->price;
         $product->image = $imageName;
 

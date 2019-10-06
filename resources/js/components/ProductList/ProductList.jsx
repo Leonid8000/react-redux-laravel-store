@@ -4,7 +4,7 @@ import  './productList.css';
 
  const ProductList = (product) => {
 
-     const { name, price, image, addProduct, addedCount } = product;
+     const { name, price, image, addProduct, screen, ram, cpu, camera, addedCount } = product;
 
      return (
          <div className="col-6 col-md-6 col-lg-3 d-inline-block">
@@ -13,10 +13,10 @@ import  './productList.css';
                  <img className="card-img-top" src={image} alt="product"/>
                  
                  <div className="char">
-                     <p className="char__text text-center mt-4">Screen: 7,7</p>
-                     <p className="char__text text-center">RAM: 120GB</p>
-                     <p className="char__text text-center">Camera: 12,0Мп</p>
-                     <p className="char__text text-center">CPU: Apple 11</p>
+                     <p className="char__text text-center">Screen: {screen}</p>
+                     <p className="char__text text-center">RAM: {ram}</p>
+                     <p className="char__text text-center">Camera: {camera}</p>
+                     <p className="char__text text-center">CPU: {cpu}</p>
                  </div>
 
                  <div className="card-body">

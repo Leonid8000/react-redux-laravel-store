@@ -3,8 +3,8 @@ import './searchBox.css';
 
 const toggleSearchBox = () => {
         let SearchBoxIcon = document.getElementById('sb');
-    // SearchBoxIcon.style.width = (SearchBoxIcon.style.width == '150px') ? 'width' : '0px'
-    SearchBoxIcon.style.width = '100px';
+    SearchBoxIcon.style.width = '120px';
+    SearchBoxIcon.addEventListener('blur',() => {SearchBoxIcon.style.width = '0px';})
 };
 
 const SearchBox = ({ searchQuery, setSearch }) => (
