@@ -31,7 +31,7 @@
 
 .search__txt{
     border:none;
-    background: var(--mainGrey);
+    /*background: var(--mainGrey);*/
     outline:none;
     color: #2d3436;
     transition: .4s;
@@ -40,6 +40,7 @@
     border-radius:40px;
     width: 0;
     height:40px;
+    background: var(--mainDark);
 }
 
 .search__box:hover > .search__txt{

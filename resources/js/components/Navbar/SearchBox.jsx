@@ -4,7 +4,11 @@ import './searchBox.css';
 const toggleSearchBox = () => {
         let SearchBoxIcon = document.getElementById('sb');
     SearchBoxIcon.style.width = '120px';
-    SearchBoxIcon.addEventListener('blur',() => {SearchBoxIcon.style.width = '0px';})
+    SearchBoxIcon.style.background = 'white';
+    SearchBoxIcon.addEventListener('blur',() => {
+        SearchBoxIcon.style.width = '0px';
+        SearchBoxIcon.style.background = '#202326';
+    })
 };
 
 const SearchBox = ({ searchQuery, setSearch }) => (

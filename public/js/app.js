@@ -9357,7 +9357,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-search{\n    color:var(--mainWhite);\n    padding-left:10px;\n}\n\n.icon-search:hover{\n    color:var(--mainDark);\n}\n\n.search__wrapper{\n    padding:10px 0;\n}\n.search__box{\n    border-radius:40px;\n}\n.search__btn{\n    width:40px;\n    height:40px;\n    display: flex;\n    align-items: center;\n}\n\n.search__btn i{\n    padding-left:10px;\n}\n\n.search__txt{\n    border:none;\n    background: var(--mainGrey);\n    outline:none;\n    color: #2d3436;\n    transition: .4s;\n    margin-left:5px;\n    float:left;\n    border-radius:40px;\n    width: 0;\n    height:40px;\n}\n\n.search__box:hover > .search__txt{\n    /*width:150px;*/\n    /*padding: 0 15px;*/\n}\n", ""]);
+exports.push([module.i, "\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-search{\n    color:var(--mainWhite);\n    padding-left:10px;\n}\n\n.icon-search:hover{\n    color:var(--mainDark);\n}\n\n.search__wrapper{\n    padding:10px 0;\n}\n.search__box{\n    border-radius:40px;\n}\n.search__btn{\n    width:40px;\n    height:40px;\n    display: flex;\n    align-items: center;\n}\n\n.search__btn i{\n    padding-left:10px;\n}\n\n.search__txt{\n    border:none;\n    /*background: var(--mainGrey);*/\n    outline:none;\n    color: #2d3436;\n    transition: .4s;\n    margin-left:5px;\n    float:left;\n    border-radius:40px;\n    width: 0;\n    height:40px;\n    background: var(--mainDark);\n}\n\n.search__box:hover > .search__txt{\n    /*width:150px;*/\n    /*padding: 0 15px;*/\n}\n", ""]);
 
 // exports
 
@@ -81535,8 +81535,10 @@ __webpack_require__.r(__webpack_exports__);
 var toggleSearchBox = function toggleSearchBox() {
   var SearchBoxIcon = document.getElementById('sb');
   SearchBoxIcon.style.width = '120px';
+  SearchBoxIcon.style.background = 'white';
   SearchBoxIcon.addEventListener('blur', function () {
     SearchBoxIcon.style.width = '0px';
+    SearchBoxIcon.style.background = '#202326';
   });
 };
 
