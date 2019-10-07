@@ -11,6 +11,7 @@ import  './productList.css';
              <div className="card mb-4">
 
                  <img className="card-img-top" src={image} alt="product"/>
+                 <img className="card-img-top" src="/img/iphone-8-segment.png"/>
                  
                  <div className="char">
                      <p className="char__text text-center">Screen: {screen}</p>

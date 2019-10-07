@@ -31,7 +31,6 @@
 
 .search__txt{
     border:none;
-    /*background: var(--mainGrey);*/
     outline:none;
     color: #2d3436;
     transition: .4s;

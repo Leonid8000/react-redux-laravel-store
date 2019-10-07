@@ -9357,7 +9357,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-search{\n    color:var(--mainWhite);\n    padding-left:10px;\n}\n\n.icon-search:hover{\n    color:var(--mainDark);\n}\n\n.search__wrapper{\n    padding:10px 0;\n}\n.search__box{\n    border-radius:40px;\n}\n.search__btn{\n    width:40px;\n    height:40px;\n    display: flex;\n    align-items: center;\n}\n\n.search__btn i{\n    padding-left:10px;\n}\n\n.search__txt{\n    border:none;\n    /*background: var(--mainGrey);*/\n    outline:none;\n    color: #2d3436;\n    transition: .4s;\n    margin-left:5px;\n    float:left;\n    border-radius:40px;\n    width: 0;\n    height:40px;\n    background: var(--mainDark);\n}\n\n.search__box:hover > .search__txt{\n    /*width:150px;*/\n    /*padding: 0 15px;*/\n}\n", ""]);
+exports.push([module.i, "\n.icon-search:before {\n    content: \"\\E986\";\n}\n\n.icon-search{\n    color:var(--mainWhite);\n    padding-left:10px;\n}\n\n.icon-search:hover{\n    color:var(--mainDark);\n}\n\n.search__wrapper{\n    padding:10px 0;\n}\n.search__box{\n    border-radius:40px;\n}\n.search__btn{\n    width:40px;\n    height:40px;\n    display: flex;\n    align-items: center;\n}\n\n.search__btn i{\n    padding-left:10px;\n}\n\n.search__txt{\n    border:none;\n    outline:none;\n    color: #2d3436;\n    transition: .4s;\n    margin-left:5px;\n    float:left;\n    border-radius:40px;\n    width: 0;\n    height:40px;\n    background: var(--mainDark);\n}\n\n.search__box:hover > .search__txt{\n    /*width:150px;*/\n    /*padding: 0 15px;*/\n}\n", ""]);
 
 // exports
 
@@ -77305,7 +77305,7 @@ var getMutation = function getMutation(_ref2) {
 /*!***********************************************************************!*\
   !*** ./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js ***!
   \***********************************************************************/
-/*! exports provided: CANCEL, SAGA_LOCATION, buffers, detach, END, channel, eventChannel, isEnd, multicastChannel, runSaga, stdChannel, default */
+/*! exports provided: default, CANCEL, SAGA_LOCATION, buffers, detach, END, channel, eventChannel, isEnd, multicastChannel, runSaga, stdChannel */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81772,6 +81772,9 @@ var ProductList = function ProductList(product) {
     className: "card-img-top",
     src: image,
     alt: "product"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "card-img-top",
+    src: "/img/iphone-8-segment.png"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "char"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
