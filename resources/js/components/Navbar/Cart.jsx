@@ -12,7 +12,7 @@ const CartComponent = (product) => {
                     <p className="text-center mt-2 teko">{name}</p>
                 </div>
                 <div className="card__body d-flex justify-content-center">
-                    <img className="cart__img" alt="cartProduct" src={image}/>
+                    <img className="cart__img" alt="cartProduct" src="/img/iphone-8-segment.png"/>
                 </div>
 
                 <div className="d-flex justify-content-center mt-1">
@@ -64,3 +64,5 @@ const Menu = ({totalPrice, count, items}) => (
 );
 
 export default Menu;
+
+// <img className="cart__img" alt="cartProduct" src={image}/>

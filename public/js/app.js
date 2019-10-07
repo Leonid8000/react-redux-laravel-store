@@ -81426,7 +81426,7 @@ var CartComponent = function CartComponent(product) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cart__img",
     alt: "cartProduct",
-    src: image
+    src: "/img/iphone-8-segment.png"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-flex justify-content-center mt-1"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -81480,7 +81480,7 @@ var Menu = function Menu(_ref) {
   }, "send")))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Menu);
+/* harmony default export */ __webpack_exports__["default"] = (Menu); // <img className="cart__img" alt="cartProduct" src={image}/>
 
 /***/ }),
 
