@@ -77305,7 +77305,7 @@ var getMutation = function getMutation(_ref2) {
 /*!***********************************************************************!*\
   !*** ./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js ***!
   \***********************************************************************/
-/*! exports provided: default, CANCEL, SAGA_LOCATION, buffers, detach, END, channel, eventChannel, isEnd, multicastChannel, runSaga, stdChannel */
+/*! exports provided: CANCEL, SAGA_LOCATION, buffers, detach, END, channel, eventChannel, isEnd, multicastChannel, runSaga, stdChannel, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81770,10 +81770,6 @@ var ProductList = function ProductList(product) {
     className: "card mb-4"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "card-img-top",
-    src: image,
-    alt: "product"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "card-img-top",
     src: "/img/iphone-8-segment.png"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "char"
@@ -81802,6 +81798,7 @@ var ProductList = function ProductList(product) {
 /* harmony default export */ __webpack_exports__["default"] = (ProductList); // <img className="card-img-top" src="../../../../img/iphone-8-segment.png"/>
 // <img className="card-img-top" src={image} alt="product"/>
 // <img className="card-img-top" src="https://vast-depths-19179.herokuapp.com/img/iphone-8-segment.png"/>
+// <img className="card-img-top" src={image} alt="product"/>
 
 /***/ }),
 
